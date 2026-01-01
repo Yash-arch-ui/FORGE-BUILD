@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> YASH'S FIRST WEB PAGE</title>
         <link rel="stylesheet" href="style~WPg.css">
         <style>
@@ -17,6 +18,7 @@
         </style>
     </head>
     <body>
+        
         <img src="images/Yash.png" alt="This is Yash Singh's potrait">
         <img src="images/Yash#1.jpeg" alt="">
         <h1>YASH'S FIRST WEBPAGE</h1>
@@ -32,21 +34,23 @@
         </p>
         <a href="mailto:yashyt01@gmail.com">Mail me</a>
         <a href="https://github.com/dashboard">GITHUB</a>
-        <a href="https://www.instagram.com/blocsociitr/?hl=en">My TARGET CLUBS INSTA ID</a>
+        <a href="https://www.instagram.com/blocsociitr/?hl=en">BlocSoc INSTA ID</a>
         <h2> THIS YEAR TARGETS</h2>
         <ul>
                  <li> 1.  Entry to BlocSoc</li>
                  <li> 2.  Start Earning</li>
                  <li> 3.  Entry to FashSoc</li>
         </ul>
+        <div class="container">
         <div id="box1">
-         BlocSoc is a tech club in IIT Roorkee,entry into which will shape my career.
+         $BlocSoc is a tech club in IIT Roorkee,entry into which will shape my career.
         </div>
         <div id="box2">
-            I have an ambition to start earning from college itself by interns and freelancing so I am highly into it.
+        $I have an ambition to start earning from college itself by interns and freelancing so I am highly into it.
         </div>
         <div id="box3">
-            Really excited to do a ramp walk,highly eager to go to FashSoc but theres a lot of time in that.
+            $Really excited to do a ramp walk,highly eager to go to FashSoc but theres a lot of time in that.
+        </div>
         </div>
     </body>
 
