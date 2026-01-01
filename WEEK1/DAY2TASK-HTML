@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> YASH'S FIRST WEB PAGE</title>
+        <link rel="stylesheet" href="style~WPg.css">
+        <style>
+             img{
+              width: 100px;
+              border-radius: 30px;
+              float:left;
+              margin-right: 10px;
+            }
+
+            body {
+              background-color: lightyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/Yash.png" alt="This is Yash Singh's potrait">
+        <img src="images/Yash#1.jpeg" alt="">
+        <h1>YASH'S FIRST WEBPAGE</h1>
+        <p> 
+            Hey! I am Yash Singh.Welcome to my first web page.
+            I study in IIT Roorkee. 
+            I love to play sports.I love coding and brainstorming on tough problems.
+            I love travelling and exploring new places.I have been a guy who loves to be on top 
+            but never reached the top, so currently I am learning from the failures.I like working hard on my goals 
+            but various times I dont achieve them despite rigorous efforts, but people say "failures are stepping stones to success".
+            So,hopefully I'll win someday~~
+
+        </p>
+        <a href="mailto:yashyt01@gmail.com">Mail me</a>
+        <a href="https://github.com/dashboard">GITHUB</a>
+        <a href="https://www.instagram.com/blocsociitr/?hl=en">My TARGET CLUBS INSTA ID</a>
+        <h2> THIS YEAR TARGETS</h2>
+        <ul>
+                 <li> 1.  Entry to BlocSoc</li>
+                 <li> 2.  Start Earning</li>
+                 <li> 3.  Entry to FashSoc</li>
+        </ul>
+        <div id="box1">
+         BlocSoc is a tech club in IIT Roorkee,entry into which will shape my career.
+        </div>
+        <div id="box2">
+            I have an ambition to start earning from college itself by interns and freelancing so I am highly into it.
+        </div>
+        <div id="box3">
+            Really excited to do a ramp walk,highly eager to go to FashSoc but theres a lot of time in that.
+        </div>
+    </body>
+
+</html>
