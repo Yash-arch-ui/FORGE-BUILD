@@ -24,7 +24,7 @@
     <p id="output"></p>
    
 </div>
-<button>TOGGLE</button>
+
  <script src="scriptwp.js"></script>
 </body>
 </html>
