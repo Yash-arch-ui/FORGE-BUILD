@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MODIFICATION BOX</title>
+
+    
+    <link rel="stylesheet" href="stylewp.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2 id="text">Hello World</h2>
+    <button id="changeTextBtn">Update Text</button>
+
+    
+    <h3>Enter something</h3>
+    <form id="myForm">
+        <input type="text" id="userInput" >
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="output"></p>
+   
+</div>
+<button>TOGGLE</button>
+ <script src="scriptwp.js"></script>
+</body>
+</html>
