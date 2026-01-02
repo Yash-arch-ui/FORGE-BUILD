@@ -1,0 +1,13 @@
+
+var flag=false;
+var btn=document.querySelector("button");
+btn.addEventListener("click",function(){
+    if(flag==false){
+       document.body.className="dark";
+       flag=true;
+    }
+    else{
+    document.body.className="light";
+    flag=false;
+    }
+});
