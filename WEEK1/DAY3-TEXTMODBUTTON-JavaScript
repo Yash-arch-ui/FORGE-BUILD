@@ -1,1 +1,15 @@
+var text = document.getElementById("text");
+var changeTextBtn = document.getElementById("changeTextBtn");
 
+var form = document.getElementById("myForm");
+var input = document.getElementById("userInput");
+var output = document.getElementById("output");
+
+changeTextBtn.addEventListener("click", function () {
+  text.innerHTML = "Text updated";
+});
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); 
+  output.innerHTML = "You entered: " + input.value;
+});
