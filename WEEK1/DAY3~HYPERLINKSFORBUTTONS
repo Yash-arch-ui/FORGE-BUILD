@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY3 TASK</title>
+</head>
+<body>
+    <a href ="indexwp.html">GO TO TEXTMODIFICATION~BUTTON:1</a>
+    <a href ="indexTOGGLE.html">GO TO TOGGLE BUTTON~BUTTON:2</a>
+</body>
+</html>
