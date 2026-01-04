@@ -1,0 +1,33 @@
+import { ethers } from "https://cdn.jsdelivr.net/npm/ethers@6/+esm";
+
+const RPC_URL = "http://127.0.0.1:8545";
+const PRIVATE_KEY =
+  "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
+
+const CONTRACT_ADDRESS = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0";
+
+const ABI = [
+  {
+    "type": "function",
+    "name": "set",
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+];
+
+const provider = new ethers.JsonRpcProvider(RPC_URL);
+const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
+const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, wallet);
+
+const numberInput = document.getElementById("numberInput");
+const sendButton = document.getElementById("send");
+const output = document.getElementById("output");
+
+sendButton.onclick = async () => {
+  const favnumber = numberInput.value;
+ const transaction = await contract.set(favnumber);
+  await transaction.wait();
+  output.textContent = `Stored value: ${favnumber}`;
+  console.log("DONE");
+};
