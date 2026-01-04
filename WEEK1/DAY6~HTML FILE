@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>DAY-6~TASK</title>
+</head>
+
+<body>
+    <input id="numberInput" type="number" placeholder="ENTER YOUR FAVORITENUMBER">
+    <button id="send">Send to Contract</button>
+     <div id="output">Stored value: - </div>
+   <script type="module" src="./index.js"></script>
+   SUCCESSFUL
+</body>
+</html> 
