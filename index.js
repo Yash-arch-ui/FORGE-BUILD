@@ -51,3 +51,7 @@ const abi=[
        document.getElementById("output").innerText=favoritenumber.toString();
 
     }
+
+window.connect = connect;
+window.set = set;
+window.get = get;
