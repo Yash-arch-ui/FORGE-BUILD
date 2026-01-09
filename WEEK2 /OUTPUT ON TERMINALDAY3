@@ -1,0 +1,40 @@
+forge script script/DeployLedger.s.sol --rpc-url $SEPOLIA_RPC_URL --broadcast --private-key $PRIVATE_KEY
+[⠒] Compiling...
+[⠑] Compiling 2 files with Solc 0.8.30
+[⠘] Solc 0.8.30 finished in 1.49s
+Compiler run successful!
+Script ran successfully.
+
+== Return ==
+0: contract Ledger 0xEae3A8c266FD8aEe65994b90573d0de9A06E0598
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 11155111
+
+Estimated gas price: 0.002354663 gwei
+
+Estimated total gas used for script: 389647
+
+Estimated amount required: 0.000000917487373961 ETH
+
+==========================
+
+##### sepolia
+✅  [Success] Hash: 0xedfa1e010f65b2bf44c8c1c8efc68ce24d0cc68b56be91a8c0a3acf715ff1612
+Contract Address: 0xEae3A8c266FD8aEe65994b90573d0de9A06E0598
+Block: 10009577
+Paid: 0.000000675500745945 ETH (299729 gas * 0.002253705 gwei)
+
+✅ Sequence #1 on sepolia | Total Paid: 0.000000675500745945 ETH (299729 gas * avg 0.002253705 gwei)
+                                        
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+
+Transactions saved to: /home/ash10/foundry-f25/FORGEBUILD/broadcast/DeployLedger.s.sol/11155111/run-latest.json
+
+Sensitive values saved to: /home/ash10/foundry-f25/FORGEBUILD/cache/DeployLedger.s.sol/11155111/run-latest.json
