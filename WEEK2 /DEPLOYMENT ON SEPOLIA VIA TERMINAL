@@ -1,0 +1,41 @@
+ forge script script/DeployLedger.s.ol --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY
+Error: contract source info format must be `<path>:<contractname>` or `<contractname>`
+ash10@DESKTOP-UUR67PN:~/foundry-f25/FORGEBUILD$ forge script script/DeployLedger.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast
+ 
+[⠊] Compiling...
+No files changed, compilation skipped
+Script ran successfully.
+
+== Return ==
+0: contract Ledger 0xfE9Fea8d9d8AE7166511D1F8dB005E7A066AEe35
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 11155111
+
+Estimated gas price: 0.001304158 gwei
+
+Estimated total gas used for script: 389678
+
+Estimated amount required: 0.000000508201681124 ETH
+
+==========================
+
+##### sepolia
+✅  [Success] Hash: 0xc857ee2e7a3fdf43354389ace71078bc49c87b9995c7ce03c282521ecea83fb6
+Contract Address: 0xfE9Fea8d9d8AE7166511D1F8dB005E7A066AEe35
+Block: 10021099
+Paid: 0.00000037811143173 ETH (299753 gas * 0.00126141 gwei)
+
+✅ Sequence #1 on sepolia | Total Paid: 0.00000037811143173 ETH (299753 gas * avg 0.00126141 gwei)
+                                          
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+
+Transactions saved to: /home/ash10/foundry-f25/FORGEBUILD/broadcast/DeployLedger.s.sol/11155111/run-latest.json
+
+Sensitive values saved to: /home/ash10/foundry-f25/FORGEBUILD/cache/DeployLedger.s.sol/11155111/run-latest.json
