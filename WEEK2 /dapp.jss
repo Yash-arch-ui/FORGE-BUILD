@@ -78,30 +78,29 @@ let signer;
 let Ledger;
 
 async function connect() {
-
   if (!window.ethereum) {
     alert("INSTALL METAMASK");
     return;
   }
-
   await window.ethereum.request({ method: "eth_requestAccounts" });
-
   provider = new ethers.BrowserProvider(window.ethereum);
+  const network= await provider.getNetwork();
+  if(network.chainId !== 11155111n){
+    alert("SWITCH TO SEPOLIA IN METAMASK");
+    return;
+  }
   signer = await provider.getSigner();
   Ledger = new ethers.Contract(address, abi, signer);
-
   listenEvents();
 }
 
 async function deposit() {
-  await connect();
-
+ await connect();
   const amount = document.getElementById("DEPOSITINGAMOUNT").value;
   if (!amount || Number(amount) <= 0) {
     alert("SEND MORE ETH");
     return;
   }
-
   let Amount;
   try {
     Amount = ethers.parseEther(amount);
@@ -109,21 +108,18 @@ async function deposit() {
     alert("INVALID AMOUNT");
     return;
   }
-
   const transaction = await Ledger.deposit({ value: Amount });
   await transaction.wait();
 
   alert(`Deposit successful: ${amount} ETH`);
 }
 
+
 async function balance() {
   await connect();
-
-  const userAddress = await signer.getAddress();
+  const userAddress = await signer.getAddress(); /* provides that address of the connected wallet */
   const bal = await Ledger.getAddresstoAmountDeposited(userAddress);
-
-  document.getElementById("balance").innerText =
-    ethers.formatEther(bal);
+  document.getElementById("balance").innerText =ethers.formatEther(bal);
 }
 
 function listenEvents() {
@@ -132,13 +128,12 @@ function listenEvents() {
 
   Ledger.on("Deposit", (user, amount) => {
     console.log(
-      "YOUR DEPOSIT IS CONFIRMED",
-      user,
-      ethers.formatEther(amount)
-    );
+      "YOUR DEPOSIT IS CONFIRMED",user,ethers.formatEther(amount));
   });
 }
 
+
 window.connect = connect;
 window.deposit = deposit;
-window.balance = balance;
+window.balance= balance;
+
